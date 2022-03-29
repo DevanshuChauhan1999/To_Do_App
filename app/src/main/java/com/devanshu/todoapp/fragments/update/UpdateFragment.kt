@@ -11,6 +11,7 @@ import androidx.navigation.fragment.navArgs
 import com.devanshu.todoapp.R
 import com.devanshu.todoapp.data.models.ToDoData
 import com.devanshu.todoapp.data.viewmodel.ToDoViewModel
+import com.devanshu.todoapp.databinding.FragmentUpdateBinding
 import com.devanshu.todoapp.fragments.SharedViewModel
 import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
@@ -24,21 +25,23 @@ class UpdateFragment : Fragment() {
 
     private val mToDoViewModel: ToDoViewModel by viewModels()
 
+    private var _binding: FragmentUpdateBinding?= null
+    private val binding get()= _binding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_update, container, false)
+        // Data Binding
+        _binding = FragmentUpdateBinding.inflate(inflater,container,false)
+        binding?.args = args
 
         //set menu
         setHasOptionsMenu(true)
 
-        view.current_title_et.setText(args.currentItem.title)
-        view.current_description_et.setText(args.currentItem.description)
-        view.current_priorities_spinner.setSelection(mSharedViewModel.parsePriorityToInt(args.currentItem.priority))
-        view.current_priorities_spinner.onItemSelectedListener = mSharedViewModel.listener
+        //Spinner Item Selected Listener
+        binding?.currentPrioritiesSpinner?.onItemSelectedListener = mSharedViewModel.listener
 
         return view
 
@@ -97,4 +100,8 @@ class UpdateFragment : Fragment() {
         inflater.inflate(R.menu.update_fragment_menu, menu)
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

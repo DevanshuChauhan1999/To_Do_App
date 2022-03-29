@@ -10,6 +10,13 @@ plugins {
 
 android {
     compileSdk 31
+    sourceSets {
+        main {
+            kotlin {
+                srcDirs += 'build/generated/source/navigation-args'
+            }
+        }
+    }
 
     defaultConfig {
         applicationId "com.devanshu.todoapp"
