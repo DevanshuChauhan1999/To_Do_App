@@ -3,7 +3,7 @@
 
 **To Do App** is a sample of Task Schedular 🍲 Android application 📱 built to demonstrate use of Modern Android development tools. Dedicated to all Android Developers with ❤️.
 
-***You can Install and test latest Foodium app from below 👇***
+***You can Install and test latest TODO app from below 👇***
 
 [![TO DO App](https://img.shields.io/badge/TO%20DO%20APP🍲-APK-red.svg?style=for-the-badge&logo=android)](https://drive.google.com/file/d/1JYfSDTpgs4XRfvNaP1l1bEftCIHC9zn7/view?usp=sharing)
 
@@ -22,7 +22,7 @@ It simply work on Room Database with Modern Android development tools.
   - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
   - [Navigation Component]()
   
-## Screenshots[Loght Mode]📱
+## Screenshots[Light Mode Only]📱
 **Home Screen**📱
 
 <img src="Screenshot/Home.jpeg" width="350">
