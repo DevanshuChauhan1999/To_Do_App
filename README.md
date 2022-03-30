@@ -25,9 +25,8 @@ It simply work on Room Database with Modern Android development tools.
 ## Screenshots[Loght Mode]📱
 **Home Screen**📱
 <img src="Screenshot/Home.jpeg" width="350" title="hover text">
-![App Screenshot](Screenshot/Home.jpeg width="48" height="")
 
 **Add Screen**📱
 
-![App Screenshot](/Screenshot/Add.gif width="48")
+<img src="Screenshot/Add.png" width="350" title="hover text">
 
