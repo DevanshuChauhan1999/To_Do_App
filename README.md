@@ -22,7 +22,7 @@ It simply work on Room Database with Modern Android development tools.
   - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
   - [Navigation Component]()
   
-## Screenshots
-
+## Screenshots[Loght Mode]
+**Home Screen**
 ![App Screenshot](https://github.com/DevanshuChauhan1999/To_Do_App/blob/master/Screenshot/Home.jpeg)
 
