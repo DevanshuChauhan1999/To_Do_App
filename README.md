@@ -20,7 +20,8 @@ It simply work on Room Database with Modern Android development tools.
   - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
   - [Room](https://developer.android.com/topic/libraries/architecture/room) - SQLite object mapping library.
   - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
-  - [Navigation Component]()
+- [Navigation Component]()
+- [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
   
 ## Screenshots[Light Mode Only]📱
 **Home Screen**📱
