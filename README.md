@@ -24,5 +24,6 @@ It simply work on Room Database with Modern Android development tools.
   
 ## Screenshots[Loght Mode]
 **Home Screen**
+
 ![App Screenshot](https://github.com/DevanshuChauhan1999/To_Do_App/blob/master/Screenshot/Home.jpeg)
 
