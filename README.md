@@ -29,5 +29,5 @@ It simply work on Room Database with Modern Android development tools.
 
 **Add Screen**📱
 
-![App Screenshot](https://github.com/DevanshuChauhan1999/To_Do_App/blob/master/Screenshot/Add.gif)
+![App Screenshot](/Screenshot/Add.gif)
 
