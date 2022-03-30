@@ -25,9 +25,9 @@ It simply work on Room Database with Modern Android development tools.
 ## Screenshots[Loght Mode]📱
 **Home Screen**📱
 
-![App Screenshot](Screenshot/Home.jpeg = 250x250)
+![App Screenshot](Screenshot/Home.jpeg width="48")
 
 **Add Screen**📱
 
-![App Screenshot](/Screenshot/Add.gif = 250x250)
+![App Screenshot](/Screenshot/Add.gif width="48")
 
