@@ -1,8 +1,7 @@
-package com.devanshu.todoapp.fragments.list
+package com.devanshu.todoapp.fragments.list.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.devanshu.todoapp.data.models.ToDoData
 import com.devanshu.todoapp.databinding.RowLayoutBinding
