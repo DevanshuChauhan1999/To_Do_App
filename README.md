@@ -25,9 +25,9 @@ It simply work on Room Database with Modern Android development tools.
 ## Screenshots[Loght Mode]📱
 **Home Screen**📱
 
-![App Screenshot](https://github.com/DevanshuChauhan1999/To_Do_App/blob/master/Screenshot/Home.jpeg)
+![App Screenshot](Screenshot/Home.jpeg = 250x250)
 
 **Add Screen**📱
 
-![App Screenshot](/Screenshot/Add.gif)
+![App Screenshot](/Screenshot/Add.gif = 250x250)
 
