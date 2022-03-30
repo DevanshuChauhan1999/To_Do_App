@@ -76,7 +76,7 @@ class ListFragment : Fragment() , SearchView.OnQueryTextListener{
                 mToDoViewModel.deleteItem(deletedItem)
                 adapter.notifyItemRemoved(viewHolder.adapterPosition)
                 //Restored Deleted Item
-                restoreDeleteData(viewHolder.itemView, deletedItem, viewHolder.adapterPosition)
+                restoreDeleteData(viewHolder.itemView, deletedItem)
             }
         }
         val itemTouchHelper = ItemTouchHelper(swipeToDeleteCallback)
@@ -84,11 +84,11 @@ class ListFragment : Fragment() , SearchView.OnQueryTextListener{
     }
 
     //to restore deleted item
-    private fun restoreDeleteData(view: View, deletedItem: ToDoData, position: Int) {
+    private fun restoreDeleteData(view: View, deletedItem: ToDoData) {
         val snackBar = Snackbar.make(view, "Deleted '${deletedItem.title}'", Snackbar.LENGTH_LONG)
         snackBar.setAction("Undo") {
             mToDoViewModel.insertData(deletedItem)
-            adapter.notifyItemChanged(position)
+            //adapter.notifyItemChanged(position)
         }
         snackBar.show()
     }
