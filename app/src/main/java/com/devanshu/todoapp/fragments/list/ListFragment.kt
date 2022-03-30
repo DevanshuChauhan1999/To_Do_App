@@ -19,6 +19,7 @@ import com.devanshu.todoapp.databinding.FragmentListBinding
 import com.devanshu.todoapp.fragments.SharedViewModel
 import com.devanshu.todoapp.fragments.list.adapter.ListAdapter
 import com.devanshu.todoapp.fragments.utils.hideKeyboard
+import com.devanshu.todoapp.fragments.utils.observeOnce
 import com.google.android.material.snackbar.Snackbar
 import jp.wasabeef.recyclerview.animators.SlideInUpAnimator
 
@@ -111,8 +112,8 @@ class ListFragment : Fragment() , SearchView.OnQueryTextListener{
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_delete_all -> confirmRemoval()
-            R.id.menu_priority_high -> mToDoViewModel.sortByHighPriority.observe(this, Observer { adapter.setData(it) })
-            R.id.menu_priority_low -> mToDoViewModel.sortByLowPriority.observe(this, Observer { adapter.setData(it) })
+            R.id.menu_priority_high -> mToDoViewModel.sortByHighPriority.observe(viewLifecycleOwner, Observer { adapter.setData(it) })
+            R.id.menu_priority_low -> mToDoViewModel.sortByLowPriority.observe(viewLifecycleOwner, Observer { adapter.setData(it) })
         }
         return super.onOptionsItemSelected(item)
     }
@@ -135,7 +136,7 @@ class ListFragment : Fragment() , SearchView.OnQueryTextListener{
     private fun searchThroughDatabase(query: String) {
         val searchQuery  = "%$query%"
 
-        mToDoViewModel.searchDatabase(searchQuery).observe(this, Observer { list ->
+        mToDoViewModel.searchDatabase(searchQuery).observeOnce(viewLifecycleOwner, Observer { list ->
             list?.let {
                 adapter.setData(it)
             }
