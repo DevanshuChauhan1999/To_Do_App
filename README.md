@@ -35,3 +35,5 @@ It simply work on Room Database with Modern Android development tools.
 
 <img src="Screenshot/Update.gif" width="350">
 
+
+And many more functions......
