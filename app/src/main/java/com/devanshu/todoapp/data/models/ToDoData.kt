@@ -3,8 +3,8 @@ package com.devanshu.todoapp.data.models
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.devanshu.todoapp.data.models.Priority
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
+
 
 @Entity(tableName = "todo_table")
 @Parcelize

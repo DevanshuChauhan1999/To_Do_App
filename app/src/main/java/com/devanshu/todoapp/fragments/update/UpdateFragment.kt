@@ -13,8 +13,6 @@ import com.devanshu.todoapp.data.models.ToDoData
 import com.devanshu.todoapp.data.viewmodel.ToDoViewModel
 import com.devanshu.todoapp.databinding.FragmentUpdateBinding
 import com.devanshu.todoapp.fragments.SharedViewModel
-import kotlinx.android.synthetic.main.fragment_update.*
-import kotlinx.android.synthetic.main.fragment_update.view.*
 
 
 class UpdateFragment : Fragment() {

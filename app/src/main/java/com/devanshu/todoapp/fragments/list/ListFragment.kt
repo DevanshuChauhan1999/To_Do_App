@@ -18,6 +18,7 @@ import com.devanshu.todoapp.data.viewmodel.ToDoViewModel
 import com.devanshu.todoapp.databinding.FragmentListBinding
 import com.devanshu.todoapp.fragments.SharedViewModel
 import com.devanshu.todoapp.fragments.list.adapter.ListAdapter
+import com.devanshu.todoapp.fragments.utils.hideKeyboard
 import com.google.android.material.snackbar.Snackbar
 import jp.wasabeef.recyclerview.animators.SlideInUpAnimator
 
@@ -51,6 +52,9 @@ class ListFragment : Fragment() , SearchView.OnQueryTextListener{
 
         // Set Menu
         setHasOptionsMenu(true)
+
+        //hide keyboard
+        hideKeyboard(requireActivity())
 
         return binding.root
     }
